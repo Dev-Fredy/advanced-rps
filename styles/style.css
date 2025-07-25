@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mywidth: 100%;
+}
+
+html {
+  font-size: 100%;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+body {
+  padding: 0 40px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+header nav {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header nav h1 {
+  width: max-content;
+  margin: 10px 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.reset_text {
+  visibility: hidden;
+}
+
+.general_reset_text {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.game_buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.game_buttons button {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.game_buttons button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.game_buttons_text {
+  position: absolute;
+  bottom: 10px;
+  left: calc(var(--mywidth) - 60px);
+  width: max-content;
+  height: max-content;
+  font-weight: bolder;
+  font-size: 1.375rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 380px) {
+  .game_buttons_text {
+    font-size: 0.75rem;
+    font-weight: bold;
+    left: calc(var(--mywidth) - 70px);
+  }
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+}
+
+.choices p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.choices p img {
+  width: 30px;
+  height: auto;
+}
+
+.results_section {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.results {
+  text-transform: uppercase;
+}
+
+.scores {
+  display: flex;
+
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.history_section {
+  flex: 1;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history_hidden {
+  visibility: hidden;
+}
+
+.history {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.show_history {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: solid gray 1px;
+  padding: 10px;
+}
+
+.history_num {
+  width: max-content;
+  padding: 0 10px 0 0;
+}
+
+.history_final {
+  flex: 1;
+}
+
+.history_scores {
+  flex: 1;
+}
+
+.more_section {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
