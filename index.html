@@ -1,94 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Rock Paper Scissors
-    </title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rock Paper Scissors Game - Play against the computer and see if you can beat it in a 10 round game."
+    />
+    <title>RPSG</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./utils/images/paper.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <h1>
-                Rock Paper Scissors Game
-            </h1>
-        </nav>
+      <nav>
+        <h1>Rock Paper Scissors Game</h1>
+      </nav>
     </header>
     <main>
-        <section class="game_buttons">
-            <button class="js_rock_button">
-                <img src="./utils/images/rock.webp" alt="">
-                <span class="game_buttons_text">
-                    Rock
-                </span>
-            </button>
-            <button class="js_paper_button">
-                <img src="./utils/images/paper.webp" alt="">
-                <span class="game_buttons_text">Paper</span>
-            </button>
-            <button class="js_scissors_button">
-                <img src="./utils/images/scissors.webp" alt="">
-                <span class="game_buttons_text">
-                    Scissors
-                </span>
-            </button>
-        </section>
-        
-        <section class="results_section">
-            <div class="js_results results"></div>
-        </section>
-        <section class="choices">
-            <p class="js_choices">
-                
-            </p>
-        </section>
-        <section class=" scores">
-<div class="js_scores"></div>
-            
-        </section>
-        <section class="js_play_controls controls">
-            <button class="js_auto_play">
-                Auto Play
-            </button>
-            <button class="js_reset">
-                Reset Scores
-            </button>
-        </section>
-        <section class="js_reset_text reset_text general_reset_text">
-            <p>
-                <span>
-                    Are you sure you want to reset the scores? <button class="yes_reset js_yes_reset">
-                        Yes
-                    </button>
-                    <button class="no_reset js_no_reset">
-                        No
-                    </button>
-                </span>
-            </p>
-        </section>
-        <hr>
-        <section class=" history_section">
-          
-            <div class="history_part">
-                <h1>
-                History
-            </h1>
-            </div>
-            <div class="js_history history"></div>
-            <div class="more_section">
-                <button class="js_more_button">
-                    More
-                </button>
-            </div>
-        </section>
-        <footer class="js_footer">
+      <section class="game_buttons">
+        <button class="js_rock_button">
+          <img src="./utils/images/rock.webp" alt="" />
+          <span class="game_buttons_text"> Rock </span>
+        </button>
+        <button class="js_paper_button">
+          <img src="./utils/images/paper.webp" alt="" />
+          <span class="game_buttons_text">Paper</span>
+        </button>
+        <button class="js_scissors_button">
+          <img src="./utils/images/scissors.webp" alt="" />
+          <span class="game_buttons_text"> Scissors </span>
+        </button>
+      </section>
 
-        
-    </footer>
+      <section class="results_section">
+        <div class="js_results results"></div>
+      </section>
+      <section class="choices">
+        <p class="js_choices"></p>
+      </section>
+      <section class="scores">
+        <div class="js_scores"></div>
+      </section>
+      <section class="js_play_controls controls">
+        <button class="js_auto_play auto_play">Auto Play</button>
+        <button class="js_reset reset">Reset Scores</button>
+      </section>
+      <section class="js_reset_text reset_text general_reset_text">
+        <p>
+          <span>
+            Are you sure you want to reset the scores?
+            <button class="yes_reset js_yes_reset">Yes</button>
+            <button class="no_reset js_no_reset">No</button>
+          </span>
+        </p>
+      </section>
+      <hr />
+      <section class="history_section">
+        <div class="history_part">
+          <h1>History</h1>
+        </div>
+        <div class="js_history history"></div>
+        <div class="more_section">
+          <button class="js_more_button">More</button>
+        </div>
+      </section>
+      <footer class="js_footer"></footer>
     </main>
-    
+
     <script src="./scripts/script.js"></script>
-</body>
+  </body>
 </html>

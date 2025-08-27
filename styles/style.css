@@ -36,7 +36,7 @@ header nav {
   width: 100%;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header nav h1 {
@@ -76,6 +76,12 @@ main {
   height: 100%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+}
+
+.game_buttons button:hover {
+  border: solid red 2px;
+  transition: 0.5s;
 }
 
 .game_buttons button img {
@@ -87,20 +93,50 @@ main {
 .game_buttons_text {
   position: absolute;
   bottom: 10px;
-  left: calc(var(--mywidth) - 60px);
-  width: max-content;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   height: max-content;
   font-weight: bolder;
-  font-size: 1.375rem;
+  font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
 }
 
-@media (max-width: 380px) {
+.yes_reset,
+.no_reset {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.yes_reset {
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.no_reset {
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.delete_history {
+  cursor: pointer;
+  padding: 4px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
   .game_buttons_text {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     font-weight: bold;
-    left: calc(var(--mywidth) - 70px);
   }
 }
 
@@ -141,6 +177,43 @@ main {
   justify-content: center;
   padding: 10px 0;
   gap: 10px;
+}
+
+.wins_text {
+  color: green;
+}
+
+.ties_text {
+  color: orange;
+}
+
+.loses_text {
+  color: red;
+}
+
+.controls button {
+  cursor: pointer;
+  padding: 4px;
+}
+
+.auto_play {
+  background-color: green;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
+}
+
+.is_auto_play {
+  background-color: red;
+}
+
+.reset {
+  background-color: orangered;
+  color: white;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
 }
 
 footer {
